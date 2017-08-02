@@ -31,13 +31,13 @@ input {
   background: red; }
   .header p {
     width: 90%;
-    height: .3rem;
+    height: .29rem;
     background: #fff;
     border-radius: .15rem;
     margin-left: 5%;
-    margin-top: .05rem;
+    margin-top: .06rem;
     text-align: center;
-    line-height: .3rem; }
+    line-height: .29rem; }
     .header p input {
       width: 80%;
       padding-left: .1rem; }
@@ -50,13 +50,28 @@ input {
   line-height: .4rem;
   border-bottom: 1px solid #ccc; }
   .nav ul {
-    width: 200%;
+    width: 250%;
     display: flex; }
     .nav ul li {
       padding: 0 .15rem; }
     .nav ul li.bg {
       color: red;
-      font-size: 16px; }
+      font-size: 15px; }
+
+#fixed {
+  z-index: 99;
+  width: .4rem;
+  height: .2rem;
+  position: fixed;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  top: .47rem;
+  right: 0;
+  cursor: pointer;
+  line-height: .2rem; }
+  #fixed .icon {
+    font-size: 16px;
+    color: #666; }
 
 .main {
   width: 100%;
@@ -65,15 +80,15 @@ input {
   display: flex;
   flex-direction: column;
   flex: 1; }
-  .main .one, .main .other {
-    width: 95%;
+  .main .this, .main .other {
+    width: 93%;
     display: flex;
     justify-content: space-between;
-    padding: .1rem; }
-    .main .one h3, .main .other h3 {
+    padding: 12px; }
+    .main .this h3, .main .other h3 {
       font-size: .15rem; }
   .main dd {
-    width: 60%;
+    width: 64%;
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
@@ -82,7 +97,8 @@ input {
       display: flex;
       justify-content: space-between; }
   .main dt {
-    width: 32%; }
+    width: .9rem;
+    height: .66rem; }
     .main dt img {
       width: 100%;
       height: 100%; }
